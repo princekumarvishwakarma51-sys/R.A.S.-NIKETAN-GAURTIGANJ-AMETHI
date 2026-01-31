@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.A.S. Niketan Gauriganj, Amethi</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --dark-blue: #0b3c5d;
+            --gold: #ffca28;
+            --light-gray: #f4f7f6;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-gray);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--dark-blue);
+            color: white;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        .logo-img {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background: #06263a;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            border-left: 5px solid var(--gold);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Form Styling */
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .btn-submit {
+            background: var(--dark-blue);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background: #06263a;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 22px; }
+            nav a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="R.A.S. Niketan Logo" class="logo-img">
+        <h1>R.A.S. Niketan Gauriganj</h1>
+        <p>Gauriganj, Amethi, Uttar Pradesh | Classes 1 to 8</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="card" id="about">
+            <h2>Hamaare Baare Mein</h2>
+            <p>R.A.S. Niketan Gauriganj ek aadarsh shikshan sansthan hai jahan bachchon ko na keval kitaabi gyan balki acche sanskar aur anushasan bhi sikhaya jata hai. Humara uddeshya har bachche ki pratibha ko nikharna hai.</p>
+        </div>
+
+        <div class="card" id="gallery">
+            <h2>School Gallery</h2>
+            <div class="gallery-grid">
+                <img src="school2.jpg" alt="School Campus">
+                <img src="school1.jpg" alt="Students in School">
+                <img src="school3.jpg" alt="School Activity">
+            </div>
+        </div>
+
+        <div class="card" id="admission">
+            <h2>Admission Form (2026-27)</h2>
+            <form action="#">
+                <input type="text" placeholder="Student ka Naam" required>
+                <input type="text" placeholder="Pita ka Naam" required>
+                <select required>
+                    <option value="">Class Chunnein</option>
+                    <option>Class 1</option>
+                    <option>Class 2</option>
+                    <option>Class 3</option>
+                    <option>Class 4</option>
+                    <option>Class 5</option>
+                    <option>Class 6</option>
+                    <option>Class 7</option>
+                    <option>Class 8</option>
+                </select>
+                <input type="tel" placeholder="Mobile Number" required>
+                <textarea rows="4" placeholder="Pura Pata (Address)"></textarea>
+                <button type="submit" class="btn-submit">Form Submit Karein</button>
+            </form>
+        </div>
+
+        <div class="card" id="contact">
+            <h2>Contact Details</h2>
+            <div class="contact-info">
+                <div>
+                    <p><strong>📞 Phone:</strong> 8009643535, 7887028805</p>
+                    <p><strong>📍 Address:</strong> Gauriganj, Amethi, UP - 227409</p>
+                </div>
+                <div>
+                    <p><strong>🕒 Timing:</strong> 8:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 R.A.S. Niketan Gauriganj, Amethi. Sabhi adhikaar surakshit hain.
+    </footer>
+
+</body>
+</html>
