@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>R.A.S. Niketan Gauriganj</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#f4f6f9; color:#333; }
+    header { background:#0b3c5d; color:#fff; padding:20px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; text-align:center; }
+    
+    /* Logo Styling */
+    .school-logo { 
+        height:100px; 
+        width:100px; 
+        margin-right:20px; 
+        background:#fff; 
+        border-radius:50%; 
+        padding:5px;
+        object-fit: contain;
+    }
+
+    header h1 { margin:0; font-size:24px; }
+    nav { background:#06263a; padding:12px; text-align:center; position:sticky; top:0; z-index:100; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; font-size:14px; }
+
+    .section { padding:30px; background:#fff; margin:20px auto; max-width:900px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    h2 { color:#0b3c5d; border-bottom:2px solid #ffca28; padding-bottom:10px; }
+
+    /* Photo Gallery Styling */
+    .gallery { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+    .gallery img { 
+        width: 100%; 
+        max-width: 280px; 
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 8px; 
+        border: 2px solid #ddd;
+    }
+
+    input, select, textarea { width:100%; padding:12px; margin:8px 0; border:1px solid #ccc; border-radius:5px; box-sizing: border-box; }
+    button { background:#0b3c5d; color:#fff; padding:15px; border:none; border-radius:5px; cursor:pointer; width:100%; font-size:16px; font-weight:bold; }
+    footer { background:#0b3c5d; color:#fff; text-align:center; padding:20px; margin-top:30px; }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png.jpg" alt="School Logo" class="school-logo">
+    <div>
+        <h1>R.A.S. Niketan Gauriganj, Amethi</h1>
+        <p>Gauriganj, Amethi | Classes 1 to 8</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="section" id="about">
+    <h2>Welcome to Our School</h2>
+    <p>Humare school mein bachchon ko gunvatta-purn shiksha aur acche sanskar diye jaate hain. Humara lakshya har bachche ka sarvangin vikas (all-round development) karna hai.</p>
+</div>
+
+<div class="section" id="gallery">
+    <h2>School Gallery</h2>
+    <div class="gallery">
+        <img src="school2.jpg.jpg" alt="School Building">
+        <img src="school1.jpg.jpg" alt="Students">
+        <img src="school3.jpg.jpeg" alt="Activities">
+    </div>
+</div>
+
+<div class="section" id="admission">
+    <h2>Admission Form (2026)</h2>
+    <form>
+        <input type="text" placeholder="Student Name" required>
+        <input type="text" placeholder="Father's Name" required>
+        <select required>
+            <option value="">Select Class</option>
+            <option>Class 1</option>
+            <option>Class 2</option>
+            <option>Class 3</option>
+            <option>Class 4</option>
+            <option>Class 5</option>
+            <option>Class 6</option>
+            <option>Class 7</option>
+            <option>Class 8</option>
+        </select>
+        <input type="tel" placeholder="Mobile Number" required>
+        <textarea rows="3" placeholder="Full Address"></textarea>
+        <button type="submit">Submit Form</button>
+    </form>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 8009643535, 7887028805</p>
+    <p>📍 Gauriganj, Amethi, UP - 227409</p>
+</div>
+
+<footer>
+    © 2026 R.A.S. Niketan Gauriganj | All Rights Reserved
+</footer>
+
+</body>
+</html>
